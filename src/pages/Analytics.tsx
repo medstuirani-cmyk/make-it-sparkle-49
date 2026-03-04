@@ -123,7 +123,7 @@ const Analytics = () => {
         <div className="gradient-card rounded-2xl p-5 border border-card-border mb-5">
             <h2 className="text-lg font-bold font-display mb-3">Daily Spending</h2>
             <div className="h-40">
-              <ResponsiveContainer width="100%" height="100%" className="text-destructive bg-primary border border-secondary-foreground border-solid">
+              <ResponsiveContainer width="100%" height="100%" className="text-destructive bg-primary border border-secondary-foreground border-solid px-px py-px my-px mx-px">
                 <BarChart data={dailyData}>
                   <XAxis dataKey="day" tick={{ fill: "hsl(240 5% 50%)", fontSize: 12 }} axisLine={false} tickLine={false} />
                   <YAxis tick={{ fill: "hsl(240 5% 50%)", fontSize: 12 }} axisLine={false} tickLine={false} />

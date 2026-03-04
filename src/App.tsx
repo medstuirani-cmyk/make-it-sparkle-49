@@ -10,6 +10,7 @@ import Analytics from "./pages/Analytics";
 import Leaderboard from "./pages/Leaderboard";
 import Challenges from "./pages/Challenges";
 import Profile from "./pages/Profile";
+import Learn from "./pages/Learn";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

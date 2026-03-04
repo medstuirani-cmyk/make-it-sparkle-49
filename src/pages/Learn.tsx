@@ -161,9 +161,9 @@ const Learn = () => {
                             </div>
                           </div>
                         </div>
-                        {lesson.status === "done" && <span className="text-xs font-semibold text-green-600 dark:text-green-400">Done</span>}
+                        {lesson.status === "done" && <span className="text-xs font-semibold text-accent">Done</span>}
                         {lesson.status === "active" && (
-                          <span className="text-xs font-bold text-white bg-amber-500 px-3 py-1 rounded-full">Start</span>
+                          <span className="text-xs font-bold text-primary-foreground gradient-primary px-3 py-1 rounded-full">Start</span>
                         )}
                       </div>
                     ))}

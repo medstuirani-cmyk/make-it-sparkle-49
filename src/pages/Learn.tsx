@@ -94,7 +94,7 @@ const Learn = () => {
                 <p className="text-sm text-muted-foreground">{completedCount} of {totalLessons} lessons</p>
               </div>
             </div>
-            <div className="flex items-center gap-1 text-amber-500 font-bold">
+            <div className="flex items-center gap-1 text-accent font-bold">
               <Trophy className="w-5 h-5" />
               {progressPercent}%
             </div>

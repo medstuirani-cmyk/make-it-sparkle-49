@@ -59,8 +59,8 @@ const totalLessons = 17;
 const progressPercent = Math.round((completedCount / totalLessons) * 100);
 
 const statusColors: Record<LessonStatus, string> = {
-  done: "bg-green-100 dark:bg-green-900/30 border-green-200 dark:border-green-800",
-  active: "bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-700",
+  done: "bg-accent/10 border-accent/30",
+  active: "bg-primary/10 border-primary/30",
   locked: "bg-muted/50 border-border",
 };
 

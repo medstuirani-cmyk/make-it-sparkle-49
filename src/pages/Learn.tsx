@@ -155,7 +155,7 @@ const Learn = () => {
                           {statusIcon(lesson.status)}
                           <div>
                             <p className="font-semibold text-sm text-foreground">{lesson.title}</p>
-                            <div className="flex items-center gap-1 text-xs text-amber-500">
+                            <div className="flex items-center gap-1 text-xs text-accent">
                               <Star className="w-3 h-3" />
                               +{lesson.xp} XP
                             </div>

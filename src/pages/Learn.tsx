@@ -65,8 +65,8 @@ const statusColors: Record<LessonStatus, string> = {
 };
 
 const statusIcon = (status: LessonStatus) => {
-  if (status === "done") return <CheckCircle2 className="w-6 h-6 text-green-500" />;
-  if (status === "active") return <Play className="w-5 h-5 text-amber-500 fill-amber-500" />;
+  if (status === "done") return <CheckCircle2 className="w-6 h-6 text-accent" />;
+  if (status === "active") return <Play className="w-5 h-5 text-primary fill-primary" />;
   return <Lock className="w-5 h-5 text-muted-foreground" />;
 };
 

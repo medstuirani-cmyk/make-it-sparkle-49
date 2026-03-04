@@ -1,12 +1,12 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { LayoutGrid, FileText, PieChart, Trophy, User } from "lucide-react";
+import { LayoutGrid, FileText, PieChart, Trophy, BrainCircuit } from "lucide-react";
 
 const tabs = [
   { label: "Home", icon: LayoutGrid, path: "/dashboard" },
   { label: "Logs", icon: FileText, path: "/logs" },
   { label: "Analytics", icon: PieChart, path: "/analytics" },
   { label: "Board", icon: Trophy, path: "/leaderboard" },
-  { label: "Profile", icon: User, path: "/profile" },
+  { label: "Learn", icon: BrainCircuit, path: "/learn" },
 ];
 
 const BottomNav = () => {

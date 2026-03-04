@@ -59,14 +59,14 @@ const totalLessons = 17;
 const progressPercent = Math.round((completedCount / totalLessons) * 100);
 
 const statusColors: Record<LessonStatus, string> = {
-  done: "bg-green-100 dark:bg-green-900/30 border-green-200 dark:border-green-800",
-  active: "bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-700",
+  done: "bg-accent/10 border-accent/30",
+  active: "bg-primary/10 border-primary/30",
   locked: "bg-muted/50 border-border",
 };
 
 const statusIcon = (status: LessonStatus) => {
-  if (status === "done") return <CheckCircle2 className="w-6 h-6 text-green-500" />;
-  if (status === "active") return <Play className="w-5 h-5 text-amber-500 fill-amber-500" />;
+  if (status === "done") return <CheckCircle2 className="w-6 h-6 text-accent" />;
+  if (status === "active") return <Play className="w-5 h-5 text-primary fill-primary" />;
   return <Lock className="w-5 h-5 text-muted-foreground" />;
 };
 
@@ -94,17 +94,17 @@ const Learn = () => {
                 <p className="text-sm text-muted-foreground">{completedCount} of {totalLessons} lessons</p>
               </div>
             </div>
-            <div className="flex items-center gap-1 text-amber-500 font-bold">
+            <div className="flex items-center gap-1 text-accent font-bold">
               <Trophy className="w-5 h-5" />
               {progressPercent}%
             </div>
           </div>
 
-          <div className="mt-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 p-3 flex items-center justify-between">
+          <div className="mt-3 rounded-xl bg-primary/10 border border-primary/20 p-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Flame className="w-5 h-5 text-amber-500" />
+              <Flame className="w-5 h-5 text-primary" />
               <div>
-                <p className="text-sm font-semibold text-amber-600 dark:text-amber-400">Daily Goal</p>
+                <p className="text-sm font-semibold text-primary">Daily Goal</p>
                 <p className="text-xs text-muted-foreground">Complete 1 lesson today to keep the streak!</p>
               </div>
             </div>
@@ -155,15 +155,15 @@ const Learn = () => {
                           {statusIcon(lesson.status)}
                           <div>
                             <p className="font-semibold text-sm text-foreground">{lesson.title}</p>
-                            <div className="flex items-center gap-1 text-xs text-amber-500">
+                            <div className="flex items-center gap-1 text-xs text-accent">
                               <Star className="w-3 h-3" />
                               +{lesson.xp} XP
                             </div>
                           </div>
                         </div>
-                        {lesson.status === "done" && <span className="text-xs font-semibold text-green-600 dark:text-green-400">Done</span>}
+                        {lesson.status === "done" && <span className="text-xs font-semibold text-accent">Done</span>}
                         {lesson.status === "active" && (
-                          <span className="text-xs font-bold text-white bg-amber-500 px-3 py-1 rounded-full">Start</span>
+                          <span className="text-xs font-bold text-primary-foreground gradient-primary px-3 py-1 rounded-full">Start</span>
                         )}
                       </div>
                     ))}
